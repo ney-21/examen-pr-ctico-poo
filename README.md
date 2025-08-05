@@ -21,78 +21,66 @@ Este proyecto implementa el clásico juego **Buscaminas** utilizando **Java**, s
 - Eclipse IDE (o cualquier otro)
 - PlantUML (para el diagrama UML)
 
----
 
 ## 📁 Estructura del proyecto
 
 src/
 ├── app/
-│ └── App.java
+│   └── App.java
 ├── controlador/
-│ └── Controlador.java
+│   └── Controlador.java
 ├── excepciones/
-│ ├── CasillaFueraDeRangoException.java
-│ └── CasillaYaDescubiertaException.java
+│   ├── CasillaFueraDeRangoException.java
+│   └── CasillaYaDescubiertaException.java
 ├── modelo/
-│ ├── Casilla.java
-│ ├── Tablero.java
-│ └── Jugador.java
+│   ├── Casilla.java
+│   ├── Tablero.java
+│   └── Jugador.java
 ├── persistencia/
-│ ├── GestorArchivos.java
-│ └── JuegoGuardado.java
+│   ├── GestorArchivos.java
+│   └── JuegoGuardado.java
 └── vista/
-└── VistaConsola.java
+    └── VistaConsola.java
 
 test/
 └── test/
-├── CasillaTest.java
-└── TableroTest.java
-
----
+    ├── CasillaTest.java
+    └── TableroTest.java
 
 ## 🛠️ Instalación
-
-1. Clona este repositorio:
-
-```bash
 git clone https://github.com/ney-21/examen-pr-ctico-poo.git
-Ábrelo en Eclipse (File > Import > Existing Project).
+Ábrelo en Eclipse:
+File > Import > Existing Project
 
 Ejecuta la clase App.java.
 
-▶️ Cómo jugar
-Al iniciar, ingresa tu nombre.
-
-Se mostrará el tablero.
-
-Ingresa una coordenada (ej. C4) y elige una acción:
-
+## ▶️ Cómo jugar
+Al iniciar, el sistema solicita el nombre del jugador.
+Se mostrará el tablero en formato de matriz con coordenadas.
+Luego, el jugador debe ingresar una coordenada (ej. C4) y elegir una acción:
 
 D = Descubrir casilla
-M = Marcar como mina
-G = Guardar partida
-C = Cargar partida
-Ejemplo:
 
+M = Marcar como mina
+
+G = Guardar partida
+
+C = Cargar partida
+
+## 💬 Ejemplo de ejecución
+
+```plaintext
+Ingrese su nombre: Carla
+   A  B  C  D
+ 1 -  -  -  -
+ 2 -  -  -  -
+ 3 -  -  -  -
 Ingrese coordenada (ej. B4): D5
 Acción (D = descubrir, M = marcar, G = guardar, C = cargar): D
-💾 Guardar y Cargar partidas
-Puedes guardar el progreso en cualquier momento con G, y volver a cargarlo luego con C. El sistema guarda también tu nombre y el estado completo del tablero.
-
-📸 Ejemplo de ejecución
-
-Ingrese su nombre: Carlos
-   A  B  C  D
- 1 - - - -
- 2 - - - -
- 3 - - - -
-Ingrese coordenada: C2
-Acción: D
-✅ Descubriste la casilla correctamente.
-
-Acción: G
 ✅ Partida guardada.
-🧪 Pruebas Unitarias
+```
+
+## 🧪 Pruebas Unitarias
 Este proyecto incluye pruebas con JUnit 5 para:
 
 CasillaTest.java
@@ -101,7 +89,7 @@ TableroTest.java
 
 Para ejecutarlas:
 
-Click derecho en la clase → Run As → JUnit Test
+Click derecho sobre la clase → Run As → JUnit Test
 
-📌 Autor
+## Autor
 Sneider Villamar Peñafiel
