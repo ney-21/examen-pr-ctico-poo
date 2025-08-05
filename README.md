@@ -21,9 +21,11 @@ Este proyecto implementa el clásico juego **Buscaminas** utilizando **Java**, s
 - Eclipse IDE (o cualquier otro)
 - PlantUML (para el diagrama UML)
 
+---
 
 ## 📁 Estructura del proyecto
 
+```plaintext
 src/
 ├── app/
 │   └── App.java
@@ -46,6 +48,8 @@ test/
 └── test/
     ├── CasillaTest.java
     └── TableroTest.java
+```
+---
 
 ## 🛠️ Instalación
 git clone https://github.com/ney-21/examen-pr-ctico-poo.git
@@ -53,6 +57,8 @@ git clone https://github.com/ney-21/examen-pr-ctico-poo.git
 File > Import > Existing Project
 
 Ejecuta la clase App.java.
+
+---
 
 ## ▶️ Cómo jugar
 Al iniciar, el sistema solicita el nombre del jugador.
@@ -67,6 +73,8 @@ G = Guardar partida
 
 C = Cargar partida
 
+---
+
 ## 💬 Ejemplo de ejecución
 
 ```plaintext
@@ -80,16 +88,20 @@ Acción (D = descubrir, M = marcar, G = guardar, C = cargar): D
 ✅ Partida guardada.
 ```
 
+---
+
 ## 🧪 Pruebas Unitarias
 Este proyecto incluye pruebas con JUnit 5 para:
 
-CasillaTest.java
+- CasillaTest.java
 
-TableroTest.java
+- TableroTest.java
 
 Para ejecutarlas:
 
 Click derecho sobre la clase → Run As → JUnit Test
+
+---
 
 ## Autor
 Sneider Villamar Peñafiel
